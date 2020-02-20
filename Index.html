@@ -4,9 +4,17 @@
         Mon chat est trés mignon!
     </Title>
 <script type="text/javascript">
+    function NoZero(INPUT){
+        if(INPUT == 0){
+            return 1
+        }
+        else{
+            return INPUT
+        }
+    }
 function load()
     {
-        document.getElementById('image').src = Math.floor(Math.random()*29).toString()+".JPG";
+        document.getElementById('image').src = NoZero(Math.ceil(Math.random()*29)).toString()+".JPG";
         document.getElementById("image").style.maxWidth = "75%";
         document.getElementById("image").style.maxHeight = "75%";
     }
