@@ -4,12 +4,6 @@
         Mon chat est trés mignon!
     </Title>
 <script type="text/javascript">
-    function ChangeUrl(title, url) {  
-        if (typeof(history.pushState) != "undefined") {  
-            var obj = { Title: title, Url: url };  
-            history.pushState(obj, obj.Title, obj.Url);    
-        }
-    }
     function NoZero(INPUT){
         if(INPUT < 1){
             return 1;
@@ -23,7 +17,6 @@
         document.getElementById("image").style.maxWidth = "100%";
         document.getElementById("image").style.maxHeight = "100%";
     }
-    ChangeUrl("Mon chat est très mignon!", "http://my-cats.gq");
 </script>
 </head>
 
